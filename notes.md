@@ -5,7 +5,7 @@
 ### Project Overview
 
 - you are approached by an entrepeneur to build out a functioning and responsive prototype for a new video streaming platform called "BrainFlix"
-- the creative directory provides you with a package and mockup of how they envision the final product
+- the creative director provides you with a package and mockup of how they envision the final product
 - there is a separate team working on a backend API that will need to be integrated with the front end, but for now just put together the static components
 - when submitting, ensure you merge your develop branch with your main branch and submit the link to your GitHub repository
 
@@ -51,4 +51,29 @@
 - update the timestamp in the comments section and video details to reflect when it was posted in a more human-readable format (without hardcoding the timestamp)
     - e.g. on YouTube, a recently posted comment might display the time posted as "10 minutes ago" or "3 days ago"
 
--- draw structure of components
+### Components:
+- app.js
+    - Header
+        - home logo
+        - search bar 
+        - button
+        - profile pic
+    - MainVideo
+        - video 
+        - video player controls
+        - video description
+            - video title, author, date posted, views, comments, and a description
+    - CommentSection
+        - # of current comments
+        - comment form
+            - profile pic
+            - button
+        - comment list
+            - comments
+                - profile pic, name, date posted, comment text
+    - NextVideosList
+        - NEXT VIDEOS header
+        - next videos card
+            - next video img, title, author
+
+### Steps
