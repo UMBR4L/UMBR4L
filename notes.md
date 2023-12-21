@@ -54,26 +54,46 @@
 ### Components:
 - app.js
     - Header
-        - home logo
-        - search bar 
+        - SiteLogo: renders an image link
+        - SearchBar: includes an input field and a search button
         - button
-        - profile pic
+        - UserProfile: includes user's profile picture
     - MainVideo
-        - video 
-        - video player controls
-        - video description
-            - video title, author, date posted, views, comments, and a description
+        - VideoPlayer: renders the main video player
+            - should include <video> and handle any video-related functionality
+        - VideoDetails: display information about the main video
+            - video title, uploader, date posted, views, comments, and a description
     - CommentSection
-        - # of current comments
-        - comment form
+        - comment list: renders a list of comments
+            iterate through the comments and render individual comment items
+        - comment form: allows users to add new comments
             - profile pic
             - button
-        - comment list
-            - comments
+        - comment
+            - takes a comment object as a prop and displays details such as the commenter's name, timestamp, and comment text
                 - profile pic, name, date posted, comment text
     - NextVideosList
-        - NEXT VIDEOS header
-        - next videos card
-            - next video img, title, author
+        - video-list: iterates through the list and renders individual video items 
+        - next video item: sub-component for each video in the list
+            - should handle the layout and styling for indivdual videos in the Next Videos list
+            - next video img, title, uploader
 
 ### Steps
+
+( ) - Review the Design Package
+(x) - Set-up Project Structure
+( ) - Create React Components
+( ) - Use Dynamic Data for components (esp. comments, main video, video list)
+( ) - Make Site Responsive (at and b/w breakpoints)
+( ) - Video Player (use <video; and it doesnt need to be functional)
+( ) - State Management (use the provided data filese to mimic a REST API response)
+( ) - BEM Naming and SASS
+( ) - Filtering and Rendering Videos
+        - hold main video in the side-videos array in state
+        - filter out the main video from the side-videos section programmaticaly
+        when rendering a component
+( ) - Comments Section
+        - render comments dynamically using data from the comments property of the main-video object stored in state
+        - the form doesn't need to be functional for this sprint
+( ) - Submit
+        - ensure youre on the 'develop' branch. Merge your 'develop' branch with the 'main' branch and submit the link to your GitHub repository
