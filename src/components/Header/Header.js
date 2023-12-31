@@ -1,22 +1,15 @@
-// Header.js
-
 import React from 'react';
-import './Header.scss'; // Import your Sass file for styling
-import SearchBar from '../SearchBar/SearchBar';
+import './Header.scss';
+import LogoImage from "../../assets/Logo/BrainFlix-logo.svg"
 
-const Header = () => {
+function Header() {
   return (
     <header className="header">
-      <div className="header__logo">
-        <img src="path/to/your/logo.png" alt="BrainFlix Logo" />
+      <div className="logo">
+        <img src={LogoImage} alt="Logo" className="logo-image" />
       </div>
-      <SearchBar/>
-      <div className="header__user-profile">
-        <img src="path/to/your/profile-picture.jpg" alt="User Profile" />
-      </div>
-      <button className="header__upload-button">Upload</button>
     </header>
   );
-};
+}
 
 export default Header;

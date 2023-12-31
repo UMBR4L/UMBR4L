@@ -1,0 +1,44 @@
+/* VideoList.css */
+
+.video-list {
+    margin-top: 20px;
+  }
+  
+  .video-list-header {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .video-list-items {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .video-list-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .video-thumbnail {
+    width: 160px; /* Adjust the thumbnail size as needed */
+    height: 90px; /* Adjust the thumbnail size as needed */
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .video-info {
+    flex: 1;
+  }
+  
+  .video-title {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  .video-channel {
+    color: #888;
+    font-size: 14px;
+  }
