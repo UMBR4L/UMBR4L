@@ -80,7 +80,7 @@
 
 ### Steps
 
-( ) - Review the Design Package
+(x) - Review the Design Package
 (x) - Set-up Project Structure
 ( ) - Create React Components
 ( ) - Use Dynamic Data for components (esp. comments, main video, video list)
