@@ -97,3 +97,8 @@
         - the form doesn't need to be functional for this sprint
 (x) - Submit
         - ensure youre on the 'develop' branch. Merge your 'develop' branch with the 'main' branch and submit the link to your GitHub repository
+
+
+## Sprint 2
+
+- upload doesnt have to actually upload. Just display a message and redirect to the home page
