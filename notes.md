@@ -82,18 +82,18 @@
 
 (x) - Review the Design Package
 (x) - Set-up Project Structure
-( ) - Create React Components
-( ) - Use Dynamic Data for components (esp. comments, main video, video list)
+(X) - Create React Components
+(X) - Use Dynamic Data for components (esp. comments, main video, video list)
 ( ) - Make Site Responsive (at and b/w breakpoints)
-( ) - Video Player (use <video; and it doesnt need to be functional)
-( ) - State Management (use the provided data filese to mimic a REST API response)
+(X) - Video Player (use <video; and it doesnt need to be functional)
+(X) - State Management (use the provided data filese to mimic a REST API response)
 ( ) - BEM Naming and SASS
 ( ) - Filtering and Rendering Videos
         - hold main video in the side-videos array in state
         - filter out the main video from the side-videos section programmaticaly
         when rendering a component
-( ) - Comments Section
+(x) - Comments Section
         - render comments dynamically using data from the comments property of the main-video object stored in state
         - the form doesn't need to be functional for this sprint
-( ) - Submit
+(x) - Submit
         - ensure youre on the 'develop' branch. Merge your 'develop' branch with the 'main' branch and submit the link to your GitHub repository

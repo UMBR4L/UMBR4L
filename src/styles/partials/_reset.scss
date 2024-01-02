@@ -1,0 +1,113 @@
+/* Apply a natural box layout model to all elements */
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+/* Reset margins, padding, and borders */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+/* Remove list styles on ul, ol elements */
+ul, ol {
+    list-style: none;
+}
+
+/* Make sure images are scalable and don't have default borders */
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+}
+
+/* Set base font family */
+body, input, button, select, textarea {
+    font-family: 'Avenir Next', sans-serif; /* As per style guide */
+}
+
+/* Typography Resets */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+/* Remove the outline on focused elements when they are also active or hovered */
+a:focus, button:focus {
+    outline: none;
+}
+
+/* Base anchor tag style reset */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Remove default table styles */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Define variables based on style guide */
+$brainflix-black: #323232;
+$brainflix-blue: #0095FF;
+$brainflix-darkblue: #0065AD;
+$silver: #AFAFAF;
+$mercury: #E1E1E1;
+$white: #FFFFFF;
+$alabaster: #FAFAFA;
+
+/* Apply basic color settings from style guide */
+body {
+    color: $brainflix-black;
+    background-color: $white;
+}
+
+/* Set global link color */
+a {
+    color: $brainflix-blue;
+}
+
+/* Apply generic padding based on style guide increments */
+$padding-unit: 8px; 
+
+/* Placeholder color */
+::placeholder {
+    color: $silver;
+}
+
+/* Set global button styles */
+button {
+    background-color: $brainflix-blue;
+    color: $white;
+    border: none;
+    padding: $padding-unit;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover {
+        background-color: $brainflix-darkblue;
+    }
+}

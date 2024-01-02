@@ -1,0 +1,59 @@
+// Font Family
+$font-family: 'Avenir Next', sans-serif;
+
+// Font Weights
+$font-weight-regular: 400;
+$font-weight-demi: 600;
+$font-weight-bold: 700;
+
+// Primary Colors
+$brainflix-black: #323232;
+$brainflix-blue: #0095FF;
+$brainflix-darkblue: #0065AD;
+
+// Secondary Colors
+$silver: #AFAFAF;
+$mercury: #E1E1E1;
+$white: #FFFFFF;
+$alabaster: #FAFAFA;
+
+// Typography Sizes
+$font-size-small: 0.8rem;  
+$font-size-base: 1rem;     
+$font-size-large: 1.2rem;  
+
+// Breakpoints
+$breakpoint-mobile: 320px;
+$breakpoint-tablet: 768px;
+$breakpoint-desktop: 1280px;
+
+// Spacing Units
+$spacing-unit: 4px;
+
+// Border Radius
+$border-radius: 4px;
+
+// Button Styles
+$button-padding: 10px 32px;
+$button-border-radius: 4px;
+$button-height: 40px;
+$button-horizontal-padding: 32px;
+$button-radius: 4px;
+
+// Input Styles
+$input-border-radius: 4px;
+
+// Padding before headlines
+$padding-before-headline-mobile: 24px;  
+$padding-before-headline-tablet: 36px;  
+$padding-before-headline-desktop: 36px; 
+
+// Padding after headlines
+$padding-after-headline-mobile: 16px;   
+$padding-after-headline-tablet: 24px;   
+$padding-after-headline-desktop: 24px;  
+
+// Padding between components
+$padding-between-components-mobile: 16px;  
+$padding-between-components-tablet: 24px;  
+$padding-between-components-desktop: 24px; 

@@ -1,21 +1,21 @@
-/* Header.css */
+@import '../../styles/partials/variables';
 
 .header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #007bff;
-    color: #fff;
-    padding: 20px;
+    background-color: $white;
+    color: $white;
+    flex-wrap: wrap;
   }
   
   .logo {
-    margin-right: 10px;
+    padding-bottom: $padding-between-components-mobile;
   }
   
   .logo-image {
-    width: 200px; /* Adjust the size as needed */
-    height: 50px; /* Adjust the size as needed */
+    width: 120px; 
+    height: 25px; 
   }
   
   .title {

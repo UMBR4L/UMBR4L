@@ -1,13 +1,10 @@
-import React from 'react';
-import "./SearchBar.scss"
+import React from "react";
+import "./SearchBar.scss";
+
 function SearchBar() {
   return (
-    <form>
-      <input
-        type="text"
-        placeholder="Search..."
-      />
-      <button type="submit">Search</button>
+    <form className="form-field">
+      <input type="text" className="form-label" placeholder="Search"></input>
     </form>
   );
 }

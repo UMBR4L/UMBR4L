@@ -1,0 +1,38 @@
+@import "./variables";
+
+// Button base styles
+button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: $button-height;
+  padding: 0 $button-horizontal-padding;
+  background-color: $brainflix-blue;
+  color: $white;
+  border: none;
+  border-radius: $button-radius;
+  cursor: pointer;
+  text-decoration: none; // Assuming the button might be styled as a link
+  transition: background-color 0.3s; 
+
+  // Icon inside button
+  .icon {
+    fill: currentColor; // Icon color matches text color
+    height: 1em; // Icon size matches text size
+    margin-right: 0.5em; // Space between icon and text
+  }
+
+  // Hover state
+  &:hover,
+  &:focus { // Also apply the hover state when focused for accessibility
+    background-color: $brainflix-darkblue;
+  }
+
+  // Full-width button for mobile view
+  @media (max-width: $breakpoint-mobile) {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    justify-content: center;
+  }
+}

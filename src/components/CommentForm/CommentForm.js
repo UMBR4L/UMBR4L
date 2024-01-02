@@ -1,20 +1,18 @@
 import React from 'react';
 import './CommentForm.scss';
-import userAvatar from "../../assets/Images/Mohan-muruge.jpg"
+import UserAvatar from '../UserAvatar/UserAvatar';
 
 function CommentForm() {
     return (
         <div className="comment-form">
-            <div className="user-avatar">
-                <img src={userAvatar} alt="User Avatar" />
-            </div>
-            <h3 className="comment-form-header">Leave a Comment</h3>
+            <UserAvatar className="user-avatar" />
+            <h3 className="comment-form__header">JOIN THE CONVERSATION</h3>
             <form>
                 <textarea
-                    className="comment-input"
-                    placeholder="Write your comment..."
+                    className="comment-form__input"
+                    placeholder="Add a new comment"
                 ></textarea>
-                <button type="submit" className="comment-submit">
+                <button type="submit" className="comment-form__submit">
                     Comment
                 </button>
             </form>

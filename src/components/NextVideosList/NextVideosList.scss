@@ -1,12 +1,10 @@
-/* VideoList.css */
-
 .video-list {
-    margin-top: 20px;
+    margin-top: 16px;
   }
   
   .video-list-header {
-    font-size: 18px;
-    margin-bottom: 15px;
+    font-size: 16px;
+    margin-bottom: 16px;
   }
   
   .video-list-items {
@@ -17,16 +15,15 @@
   .video-list-item {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
   }
   
   .video-thumbnail {
-    width: 160px; /* Adjust the thumbnail size as needed */
-    height: 90px; /* Adjust the thumbnail size as needed */
+    width: 160px; 
+    height: 90px; 
     object-fit: cover;
-    margin-right: 10px;
+    margin-right: 8px;
     border-radius: 5px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
   }
   
   .video-info {
@@ -35,10 +32,9 @@
   
   .video-title {
     font-size: 16px;
-    margin-bottom: 5px;
+    margin-bottom: 4px;
   }
   
   .video-channel {
-    color: #888;
-    font-size: 14px;
+    font-size: 16px;
   }

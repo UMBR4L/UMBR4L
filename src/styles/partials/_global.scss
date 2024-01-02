@@ -1,0 +1,67 @@
+@import 'variables';
+@import 'mixins';
+@import 'fonts';
+
+// Apply global padding to the body based on the padding between components
+body {
+  padding: $padding-between-components-mobile;
+
+  @include tablet {
+    padding: $padding-between-components-tablet;
+  }
+
+  @include desktop {
+    padding: $padding-between-components-desktop; 
+  }
+}
+
+// Apply padding before and after headlines for h1, h2, h3, etc.
+h1, h2, h3, h4, h5, h6 {
+  padding-top: $padding-before-headline-mobile;
+  padding-bottom: $padding-after-headline-mobile;
+
+  @include tablet {
+    padding-top: $padding-before-headline-tablet;
+    padding-bottom: $padding-after-headline-tablet;
+  }
+
+  @include desktop {
+    padding-top: $padding-before-headline-desktop;
+    padding-bottom: $padding-after-headline-desktop;
+  }
+}
+
+// Apply padding between components
+.component + .component {
+  margin-top: $padding-between-components-mobile;
+
+  @include tablet {
+    margin-top: $padding-between-components-tablet;
+  }
+
+  @include desktop {
+    margin-top: $padding-between-components-desktop;
+  }
+}
+
+// Form Field Styles
+.form-field {
+  max-width: 240px; 
+  height: 40px; 
+  padding: $padding-after-headline-mobile; 
+  background-color: $alabaster; 
+  border: 1px solid $mercury; 
+  border-radius: $border-radius; 
+  margin-bottom: $padding-between-components-mobile;
+
+  // Active State
+  &:active {
+    border: 2px solid $brainflix-blue; // Border for active state
+    outline: none; // Remove default outline
+  }
+
+  // Error State
+  &.error {
+    border: 1px solid #D22D2D; // Border for error state
+  }
+}

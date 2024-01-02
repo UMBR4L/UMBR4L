@@ -1,38 +1,35 @@
-/* VideoDetails.css */
+@import '../../styles/partials/variables.scss';
 
 .video-details {
-    padding: 20px;
-    border: 1px solid #ddd;
-    background-color: #fff;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-  }
-  
-  .video-title {
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
+
   .video-metadata {
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1rem; 
+    color: $mercury;
+
+    .video-author,
+    .video-views,
+    .video-likes,
+    .video-date {
+      display: flex;
+      align-items: center;
+      margin: $spacing-unit 0;
+
+      svg {
+        width: 1em; 
+        height: 1em; 
+        margin-right: 0.5em;
+      }
+    }
   }
-  
-  .video-author {
-    font-weight: bold;
-  }
-  
-  .video-likes {
-    color: #007bff;
-  }
-  
+
   .divider {
-    border: 0;
-    border-top: 1px solid #ddd;
-    margin: 20px 0;
+
   }
-  
+
   .video-description {
-    font-size: 16px;
+
   }
+}

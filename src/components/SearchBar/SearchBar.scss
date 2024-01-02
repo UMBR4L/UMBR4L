@@ -1,37 +1,20 @@
-/* SearchBar.css */
+@import "../../styles/partials/variables";
 
-/* Style for the container form */
 form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 20px;
-  }
-  
-  /* Style for the input field */
-  input[type="text"] {
-    padding: 10px;
-    width: calc(100% - 30px);
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    outline: none;
-  }
-  
-  /* Style for the search button */
-  button[type="submit"] {
-    padding: 10px 20px;
-    margin-left: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: background-color 0.3s;
-  }
-  
-  /* Hover effect for the search button */
-  button[type="submit"]:hover {
-    background-color: #0056b3;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../../assets/images/icons/search.svg") no-repeat left;
+  background-position-x: 10px;
+}
+
+.form-label {
+  margin-left: 15%;
+  border: none;
+}
+
+
+::placeholder {
+  color: $brainflix-black;
+  opacity: 1; 
+}

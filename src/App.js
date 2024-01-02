@@ -1,9 +1,6 @@
-import logo from './logo.svg';
 import { useState } from 'react';
 import './App.scss';
 import Header from './components/Header/Header';
-import SearchBar from './components/SearchBar/SearchBar';
-import VideoUpload from './components/VideoUpload/VideoUpload';
 import MainVideo from './components/MainVideo/MainVideo';
 import VideoDetails from './components/VideoDetails/VideoDetails';
 import CommentSection from './components/CommentSection/CommentSection';
@@ -11,11 +8,11 @@ import CommentForm from './components/CommentForm/CommentForm';
 import NextVideosList from './components/NextVideosList/NextVideosList';
 
 // oUR data files (they get turned into arrays)
-import videoDetails from "./assets/Data/video-details.json";
-import nextVideos from "./assets/Data/videos.json";
+import videoDetails from "./data/video-details.json";
+import nextVideos from "./data/videos.json";
 
 function App() {
-  // write comments HERE What does this do?
+  // React Hook that changes the main video displayed onVideoSelect
   const [videoIndex, setVideoIndex] = useState(0);
   
   // This function changes our video index and makes our site dynamic
@@ -26,15 +23,14 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <SearchBar />
-      <VideoUpload />
-      <MainVideo src={videoDetails[videoIndex].video} />
+      <MainVideo src={videoDetails[videoIndex].video} poster={videoDetails[videoIndex].image}/>
       <VideoDetails 
         title={videoDetails[videoIndex].title} 
         author={videoDetails[videoIndex].channel} 
         views={videoDetails[videoIndex].views}
         likes={videoDetails[videoIndex].likes} 
-        description={videoDetails[videoIndex].description} 
+        description={videoDetails[videoIndex].description}
+        date={videoDetails[videoIndex].timestamp} 
       />
       <CommentForm/>
       <CommentSection comments={videoDetails[videoIndex].comments} />
