@@ -46,13 +46,12 @@ h1, h2, h3, h4, h5, h6 {
 
 // Form Field Styles
 .form-field {
-  max-width: 240px; 
-  height: 40px; 
-  padding: $padding-after-headline-mobile; 
+  max-width: 15rem; 
+  height: 2.5rem; 
   background-color: $alabaster; 
   border: 1px solid $mercury; 
   border-radius: $border-radius; 
-  margin-bottom: $padding-between-components-mobile;
+  margin: 0 auto $padding-between-components-mobile;
 
   // Active State
   &:active {

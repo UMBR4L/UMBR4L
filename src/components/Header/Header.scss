@@ -1,23 +1,28 @@
-@import '../../styles/partials/variables';
+@import "../../styles/partials/variables";
 
 .header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: $white;
-    color: $white;
-    flex-wrap: wrap;
-  }
-  
-  .logo {
-    padding-bottom: $padding-between-components-mobile;
-  }
-  
-  .logo-image {
-    width: 120px; 
-    height: 25px; 
-  }
-  
-  .title {
-    font-size: 24px;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $white;
+  color: $white;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  align-items: center; // Vertically center the children
+  justify-content: center; // Horizontally center the children
+  padding-bottom: $padding-between-components-mobile;
+  width: 100%;
+}
+
+.logo-image {
+  width: 120px;
+  height: 25px;
+  margin: auto;
+}
+
+.title {
+  font-size: 24px;
+}
