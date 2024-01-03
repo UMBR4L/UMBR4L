@@ -1,8 +1,80 @@
-@import 'variables';
+/* fonts.scss */
 
-// Apply the base font family to the body and set default sizes
-body {
-  font-family: $font-family;
+// Import variables
+@import "variables";
+
+/* Font Faces */
+@font-face {
+  font-family: "Avenir Next";
+  src: url("../../assets/fonts/AvenirNextLTPro-Regular.otf") format("opentype");
   font-weight: $font-weight-regular;
-  font-size: $font-size-base;
+}
+
+@font-face {
+  font-family: "Avenir Next";
+  src: url("../../assets/fonts/AvenirNextLTPro-Bold.otf") format("opentype");
+  font-weight: $font-weight-bold; 
+}
+
+// Page Header Styles
+.page-header {
+  font-family: $font-family;
+  font-size: $header-font-size;
+  line-height: $header-line-height;
+  font-weight: $font-weight-bold;
+}
+
+// Section Header Styles
+.section-header {
+  font-family: $font-family;
+  font-size: $section-header-font-size;
+  line-height: $section-header-line-height;
+  font-weight: $font-weight-bold;
+}
+
+// Subheader Styles
+.subheader {
+  font-family: $font-family;
+  font-size: $subheader-font-size;
+  line-height: $subheader-line-height;
+  font-weight: $font-weight-bold;
+}
+
+// Body Copy Styles
+.body-copy {
+  font-family: $font-family;
+  font-size: $body-copy-font-size;
+  line-height: $body-copy-line-height;
+  font-weight: $font-weight-regular;
+}
+
+// Labels & Buttons Styles
+.labels-buttons {
+  font-family: $font-family;
+  font-size: $label-button-font-size;
+  line-height: $label-button-line-height;
+  font-weight: $font-weight-bold;
+}
+
+// Mobile Styles 
+@media (max-width: $breakpoint-mobile) {
+  .page-header {
+    font-size: $mobile-header-font-size;
+    line-height: $mobile-header-line-height;
+  }
+
+  .subheader {
+    font-size: $mobile-subheader-font-size;
+    line-height: $mobile-subheader-line-height;
+  }
+
+  .body-copy {
+    font-size: $mobile-body-copy-font-size;
+    line-height: $mobile-body-copy-line-height;
+  }
+
+  .labels-buttons {
+    font-size: $mobile-label-button-font-size;
+    line-height: $mobile-label-button-line-height;
+  }
 }

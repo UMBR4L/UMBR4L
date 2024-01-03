@@ -3,7 +3,6 @@ $font-family: 'Avenir Next', sans-serif;
 
 // Font Weights
 $font-weight-regular: 400;
-$font-weight-demi: 600;
 $font-weight-bold: 700;
 
 // Primary Colors
@@ -22,8 +21,31 @@ $font-size-small: 0.8rem;
 $font-size-base: 1rem;     
 $font-size-large: 1.2rem;  
 
+// Typography Sizes for Desktop & Tablet
+$header-font-size: 33px;
+$header-line-height: 44px;
+$section-header-font-size: 12px;
+$section-header-line-height: 20px;
+$subheader-font-size: 14px;
+$subheader-line-height: 22px;
+$body-copy-font-size: 14px;
+$body-copy-line-height: 22px;
+$label-button-font-size: 12px;
+$label-button-line-height: 20px;
+
+// Typography Sizes for Mobile
+$mobile-header-font-size: 24px;
+$mobile-header-line-height: 32px;
+$mobile-subheader-font-size: 13px;
+$mobile-subheader-line-height: 18px;
+$mobile-body-copy-font-size: 13px;
+$mobile-body-copy-line-height: 18px;
+$mobile-label-button-font-size: 10px;
+$mobile-label-button-line-height: 20px;
+// Note: The other mobile text styles are the same as desktop/tablet
+
 // Breakpoints
-$breakpoint-mobile: 320px;
+$breakpoint-mobile: 767px;
 $breakpoint-tablet: 768px;
 $breakpoint-desktop: 1280px;
 

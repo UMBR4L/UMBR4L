@@ -4,20 +4,27 @@
 
   .video-metadata {
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    justify-content: space-between; // This separates the two columns
     font-size: 1rem; 
     color: $mercury;
 
+    .video-info,
+    .video-stats {
+      flex-basis: 50%;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
     .video-author,
+    .video-date,
     .video-views,
-    .video-likes,
-    .video-date {
+    .video-likes {
       display: flex;
       align-items: center;
       margin: $spacing-unit 0;
 
-      svg {
+      img {
         width: 1em; 
         height: 1em; 
         margin-right: 0.5em;
@@ -25,11 +32,11 @@
     }
   }
 
-  .divider {
+  // .divider {
+  //   // Styles for the divider, if any
+  // }
 
-  }
-
-  .video-description {
-
-  }
+  // .video-description {
+  //   // Styles for the video description, if any
+  // }
 }

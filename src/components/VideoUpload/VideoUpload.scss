@@ -1,20 +1,18 @@
 @import '../../styles/partials/variables';
 
-.upload-button {
+.header__upload-button {
   display: block;
   width: 100%;
   background-color: $brainflix-blue;
   color: $white;
   border: none;
   border-radius: 5px;
-  font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s;
-  margin-bottom: $padding-after-headline-mobile; 
 
-  background-image: url('../../assets/images/icons/upload.svg'); 
+  background-image: url('../../assets/Images/icons/upload.svg'); 
   background-repeat: no-repeat;
-  background-position: 16px center;
+  background-position: (4 * $spacing-unit) center;
 
   :hover{
     background-color: $brainflix-darkblue;

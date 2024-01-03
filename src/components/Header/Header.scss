@@ -7,20 +7,14 @@
   background-color: $white;
   color: $white;
   flex-wrap: wrap;
-}
-
-.logo {
-  display: flex;
-  align-items: center; // Vertically center the children
-  justify-content: center; // Horizontally center the children
   padding-bottom: $padding-between-components-mobile;
   width: 100%;
 }
 
-.logo-image {
+.header__logo-image {
   width: 120px;
-  height: 25px;
   margin: auto;
+  padding-bottom: $padding-after-headline-mobile;
 }
 
 .title {

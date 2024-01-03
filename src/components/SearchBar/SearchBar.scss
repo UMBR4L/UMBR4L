@@ -1,18 +1,21 @@
 @import "../../styles/partials/variables";
 
-form {
+.header__searchbar-form {
   display: flex;
   align-items: center;
-  background: url("../../assets/images/icons/search.svg") no-repeat left;
+  background: url("../../assets/Images/icons/search.svg") no-repeat left;
   background-position-x: 10px;
+  margin: 0 0 $padding-after-headline-mobile;
+  transition: border-color 0.3s;
 }
 
-.form-label {
+.header__searchbar-input {
   width: 20rem;
   height: 2rem;
   margin-left: 15%;
   border: none;
   padding: 0;
+
 }
 
 

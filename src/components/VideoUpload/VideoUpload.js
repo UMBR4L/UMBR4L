@@ -3,7 +3,7 @@ import "./VideoUpload.scss"
 
 function VideoUpload() {
   return (
-    <button className="upload-button button">Upload</button>
+    <button className="header__upload-button labels-buttons">Upload</button>
   );
 }
 
