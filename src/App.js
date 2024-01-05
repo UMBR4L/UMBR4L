@@ -1,11 +1,14 @@
 import { useState } from 'react';
-import './App.scss';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import Header from './components/Header/Header';
 import MainVideo from './components/MainVideo/MainVideo';
 import VideoDetails from './components/VideoDetails/VideoDetails';
 import CommentSection from './components/CommentSection/CommentSection';
 import CommentForm from './components/CommentForm/CommentForm';
 import NextVideosList from './components/NextVideosList/NextVideosList';
+
+import './App.scss';
 
 // oUR data files (they get turned into arrays)
 import videoDetails from "./data/video-details.json";

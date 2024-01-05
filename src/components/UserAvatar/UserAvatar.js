@@ -1,5 +1,5 @@
 import "./UserAvatar.scss";
-import defaultAvatar from "../../assets/Images/Mohan-muruge.jpg";
+import defaultAvatar from "../../assets/images/Mohan-muruge.jpg";
 
 const UserAvatar = () => { 
     return (

@@ -1,14 +1,20 @@
-import React from 'react';
-import './Header.scss';
-import LogoImage from "../../assets/Images/logo/BrainFlix-logo.svg"
-import SearchBar from '../SearchBar/SearchBar';
-import UserAvatar from '../UserAvatar/UserAvatar';
-import VideoUpload from '../VideoUpload/VideoUpload';
+import React from "react";
+import { Link } from "react-router-dom";
+
+import LogoImage from "../../assets/images/logo/BrainFlix-logo.svg";
+import SearchBar from "../SearchBar/SearchBar";
+import UserAvatar from "../UserAvatar/UserAvatar";
+import VideoUpload from "../VideoUpload/VideoUpload";
+
+import "./Header.scss";
 
 function Header() {
   return (
     <header className="header">
-        <img src={LogoImage} alt="Logo" className="header__logo-image" />
+      // BrainFlix Logo 
+      <Link to="/">
+        <img src={LogoImage} alt="BrainFlix Logo" className="header__logo-image" />
+      </Link>
       <SearchBar />
       <UserAvatar />
       <VideoUpload />

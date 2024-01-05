@@ -1,7 +1,7 @@
 import React from 'react';
 import './VideoDetails.scss';
-import viewsIcon from '../../assets/Images/icons/views.svg'; 
-import likesIcon from '../../assets/Images/icons/likes.svg'; 
+import viewsIcon from '../../assets/images/icons/views.svg'; 
+import likesIcon from '../../assets/images/icons/likes.svg'; 
 
 function VideoDetails({ title, author, likes, views, description, date }) {
   return (
