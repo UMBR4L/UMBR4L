@@ -147,3 +147,7 @@ when rendering a component
    Submission: Merge your develop branch with the main branch and submit the link to your GitHub repository.
 10. Diving Deeper (Optional)
     Posting Comments: Implement the ability to post and delete comments.
+
+### Known Issues
+- in comments section, change user avatar to render dynamically
+- filter out currently displayed video from Up Next videos

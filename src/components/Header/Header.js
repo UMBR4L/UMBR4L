@@ -11,9 +11,13 @@ import "./Header.scss";
 function Header() {
   return (
     <header className="header">
-      // BrainFlix Logo 
       <Link to="/">
-        <img src={LogoImage} alt="BrainFlix Logo" className="header__logo-image" />
+        {/* BrainFlix Logo  */}
+        <img
+          src={LogoImage}
+          alt="BrainFlix Logo"
+          className="header__logo-image"
+        />
       </Link>
       <SearchBar />
       <UserAvatar />
