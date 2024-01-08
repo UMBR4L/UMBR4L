@@ -1,9 +1,13 @@
-import React from 'react';
-import "./VideoUpload.scss"
+import React from "react";
+import { Link } from "react-router-dom";
+
+import "./VideoUpload.scss";
 
 function VideoUpload() {
   return (
-    <button className="header__upload-button labels-buttons">Upload</button>
+    <Link to="/upload">
+      <button className="header__upload-button labels-buttons">Upload</button>
+    </Link>
   );
 }
 

@@ -113,7 +113,7 @@ when rendering a component
    react-router-dom for routing.
    axios for making API requests.
    sass for compiling .scss files.
-3. Functional Requirements Implementation
+3. Functional Requirements Implementation X
    Navigation:
    Ensure clicking the BrainFlix Logo navigates back to the home page.
    Routing:
@@ -131,13 +131,13 @@ when rendering a component
    Use SASS variables.
    Follow BEM principles for class names.
    Implement layouts using Flexbox.
-6. Main Video Page
-   Routing:
+6. Main Video Page X
+   Routing: 
    Home Page and Video Details Page should use the same component but different routes.
    Use useEffect and useParams from react-router to update main video data based on URL changes.
    Side Videos Interaction:
    Update the main video when a side video is clicked by changing the URL, not state.
-7. Video Upload Page
+7. Video Upload Page X
    Layout: Match the provided mockup.
    Form Interaction: Notify about “upload” and redirect after form submission.
 8. Video API Integration

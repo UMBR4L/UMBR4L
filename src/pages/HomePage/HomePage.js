@@ -9,14 +9,6 @@ import videoDetails from "../../data/video-details.json";
 import nextVideos from "../../data/videos.json";
 
 export default function HomePage() {
-  // React Hook that changes the main video displayed onVideoSelect
-//   const [videoIndex, setVideoIndex] = useState(0);
-
-//   // This function changes our video index and makes our site dynamic
-//   const changeVideo = (index) => {
-//     setVideoIndex(index);
-//   };
-  // Assuming videoIndex and changeVideo are passed as props or use context
   return (
     <>
       <MainVideo
