@@ -14,7 +14,8 @@ function NextVideoListItem({ video }) {
     </Link>
   );
 }
-function NextVideosList({ videos, onVideoSelect }) {
+
+function NextVideosList({ videos }) {
   return (
     <div className="video-list">
       <h2 className="video-list-header">Up Next</h2>

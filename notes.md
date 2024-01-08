@@ -140,7 +140,7 @@ when rendering a component
 7. Video Upload Page X
    Layout: Match the provided mockup.
    Form Interaction: Notify about “upload” and redirect after form submission.
-8. Video API Integration
+8. Video API Integration X
    Data Retrieval: Use axios to retrieve data from the provided mock API for video links, details, and comments.
 9. Project Structure and Submission
    Branching: Use develop & feature branches for development.
