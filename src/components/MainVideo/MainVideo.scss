@@ -1,7 +1,12 @@
+@import '../../styles/partials/variables.scss';
+
 .videoPlayer {
-    max-width: 100%;
+  width: 100%;
+  margin-left: calc(-1 * $padding-between-components-mobile);
+  margin-right: calc(-1 * $padding-between-components-mobile);
 }
 
-.videoPlayer video {
-    width: 100%;
+.videoPlayer__video {
+  width: 100%;
+  height: auto;
 }

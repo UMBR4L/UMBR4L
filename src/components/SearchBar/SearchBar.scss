@@ -1,23 +1,18 @@
 @import "../../styles/partials/variables";
 
 .header__searchbar-form {
-  display: flex;
-  align-items: center;
+  width: 80%;
   background: url("../../assets/images/icons/search.svg") no-repeat left;
-  background-position-x: 10px;
-  margin: 0 0 $padding-after-headline-mobile;
+  background-position-x: (2 * $spacing-unit);
   transition: border-color 0.3s;
+  margin-bottom: $padding-between-components-mobile;
 }
 
 .header__searchbar-input {
-  width: 20rem;
-  height: 2rem;
+  height: 2.5rem;
   margin-left: 15%;
   border: none;
-  padding: 0;
-
 }
-
 
 ::placeholder {
   color: $brainflix-black;

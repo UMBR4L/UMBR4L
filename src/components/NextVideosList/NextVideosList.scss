@@ -1,3 +1,5 @@
+@import '../../styles/partials/variables.scss';
+
 .video-list {
     margin-top: 16px;
   }
@@ -30,10 +32,7 @@
     flex: 1;
   }
   
-  .video-title {
-    font-size: 16px;
-    margin-bottom: 4px;
-  }
+
   
   .video-channel {
     font-size: 16px;

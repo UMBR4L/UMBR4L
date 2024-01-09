@@ -53,7 +53,7 @@ function VideoDetailsPage() {
         description={currentVideo.description}
         date={currentVideo.timestamp}
       />
-      <CommentForm />
+      <CommentForm commentCount={currentVideo.comments.length} />
       <CommentSection comments={currentVideo.comments} />
       <NextVideosList videos={nextVideos} />
     </>

@@ -5,7 +5,7 @@ import "./VideoUpload.scss";
 
 function VideoUpload() {
   return (
-    <Link to="/upload">
+    <Link to="/upload" className="header__upload-link">
       <button className="header__upload-button labels-buttons">Upload</button>
     </Link>
   );

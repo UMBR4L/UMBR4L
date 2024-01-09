@@ -2,21 +2,21 @@
 
 .header {
   display: flex;
-  align-items: center;
   justify-content: center;
   background-color: $white;
   color: $white;
   flex-wrap: wrap;
-  padding-bottom: $padding-between-components-mobile;
-  width: 100%;
-}
+  margin-bottom: $padding-between-components-mobile;
 
-.header__logo-image {
-  width: 120px;
-  margin: auto;
-  padding-bottom: $padding-after-headline-mobile;
-}
+  &__logo-link {
+    max-height: 25px;
+    max-width: 120px;
+    margin-bottom: $padding-between-components-mobile;
+  }
 
-.title {
-  font-size: 24px;
+  &__logo-image {
+    width: 120px;
+    background-color: $white;
+    
+  }
 }

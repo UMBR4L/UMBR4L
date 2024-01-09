@@ -1,6 +1,6 @@
-@import 'variables';
-@import 'mixins';
-@import 'fonts';
+@import "variables";
+@import "mixins";
+@import "fonts";
 
 // Apply global padding to the body based on the padding between components
 body {
@@ -11,12 +11,17 @@ body {
   }
 
   @include desktop {
-    padding: $padding-between-components-desktop; 
+    padding: $padding-between-components-desktop;
   }
 }
 
 // Apply padding before and after headlines for h1, h2, h3, etc.
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   padding-top: $padding-before-headline-mobile;
   padding-bottom: $padding-after-headline-mobile;
 
@@ -31,27 +36,11 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-// Apply padding between components
-.component + .component {
-  margin-top: $padding-between-components-mobile;
-
-  @include tablet {
-    margin-top: $padding-between-components-tablet;
-  }
-
-  @include desktop {
-    margin-top: $padding-between-components-desktop;
-  }
-}
-
 // Form Field Styles
 .form-field {
-  max-width: 15rem; 
-  height: 2.5rem; 
-  background-color: $alabaster; 
-  border: 1px solid $mercury; 
-  border-radius: $border-radius; 
-  margin: 0 auto $padding-between-components-mobile;
+  background-color: $alabaster;
+  border: 1px solid $mercury;
+  border-radius: $border-radius;
 
   // Active State
   &:active {
@@ -61,6 +50,12 @@ h1, h2, h3, h4, h5, h6 {
 
   // Error State
   &.error {
-    border: 1px solid #D22D2D; // Border for error state
+    border: 1px solid #d22d2d; // Border for error state
   }
+}
+
+// Divider Styles
+.divider {
+  stroke-width: 1px;
+  color: $mercury;
 }

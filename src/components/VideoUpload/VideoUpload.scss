@@ -1,12 +1,13 @@
 @import '../../styles/partials/variables';
 
-.header__upload-button {
-  display: block;
+.header__upload-link {
   width: 100%;
+}
+
+.header__upload-button {
   background-color: $brainflix-blue;
   color: $white;
-  border: none;
-  border-radius: 5px;
+  border-radius: $border-radius;
   cursor: pointer;
   transition: background-color 0.3s;
 

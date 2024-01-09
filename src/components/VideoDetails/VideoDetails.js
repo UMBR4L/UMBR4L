@@ -6,10 +6,11 @@ import likesIcon from '../../assets/images/icons/likes.svg';
 function VideoDetails({ title, author, likes, views, description, date }) {
   return (
     <div className="video-details">
-      <h2 className="video-title">{title}</h2>
+      <h2 className="video-title page-header">{title}</h2>
+      <hr className="divider" />
       <div className="video-metadata">
         <div className="video-info">
-          <p className="video-author">By {author}</p>
+          <p className="video-author subheader">By {author}</p>
           <p className="video-date">{date}</p>
         </div>
         <div className="video-stats">
@@ -24,7 +25,7 @@ function VideoDetails({ title, author, likes, views, description, date }) {
         </div>
       </div>
       <hr className="divider" />
-      <p className="video-description">{description}</p>
+      <p className="video-description body-copy">{description}</p>
     </div>
   );
 }

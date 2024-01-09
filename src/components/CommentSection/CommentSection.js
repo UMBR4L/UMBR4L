@@ -26,7 +26,6 @@ function Comment({ comment, index }) {
 function CommentSection({ comments }) {
   return (
     <div className="comment-section">
-      <h3 className="comment-section__header">{comments.length} Comments</h3>
       <ul className="comment-section__list">
         {comments.map((comment, index) => (
           <Comment key={`comment-${index}`} comment={comment} index={index} />

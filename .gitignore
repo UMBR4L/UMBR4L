@@ -7,9 +7,6 @@ node_modules
 /.pnp
 .pnp.js
 
-# utilities
-utils
-
 # testing
 /coverage
 

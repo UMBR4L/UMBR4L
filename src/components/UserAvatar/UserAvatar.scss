@@ -1,7 +1,11 @@
 .header__avatar {
-  width: 3.125rem; 
-  height: 3.125rem; 
+  width: 2.5rem; 
+  height: 2.5rem; 
   border-radius: 50%; // Circular shape
   object-fit: cover;
   margin: 0 auto;
+}
+
+.user-avatar {
+  margin: 0;
 }

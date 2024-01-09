@@ -1,11 +1,14 @@
-@import '../../styles/partials/variables.scss';
+@import "../../styles/partials/variables.scss";
 
 .video-details {
+  .video-title {
+    padding-bottom: 2 * $spacing-unit;
+  }
 
   .video-metadata {
     display: flex;
     justify-content: space-between; // This separates the two columns
-    font-size: 1rem; 
+    font-size: 1rem;
     color: $mercury;
 
     .video-info,
@@ -16,27 +19,28 @@
       align-items: flex-start;
     }
 
-    .video-author,
+    .video-author {
+      color: $brainflix-black;
+      margin: $spacing-unit 0;
+    }
+
     .video-date,
     .video-views,
     .video-likes {
-      display: flex;
-      align-items: center;
+      color: $silver;
+      font-size: $mobile-subheader-font-size;
+      line-height: $mobile-subheader-line-height;
       margin: $spacing-unit 0;
 
       img {
-        width: 1em; 
-        height: 1em; 
-        margin-right: 0.5em;
+        width: 2em;
+        height: 1em;
+        margin-right: $spacing-unit;
       }
     }
   }
 
-  // .divider {
-  //   // Styles for the divider, if any
-  // }
-
-  // .video-description {
-  //   // Styles for the video description, if any
-  // }
+  .video-description {
+    padding-top: 2 * $spacing-unit;
+  }
 }

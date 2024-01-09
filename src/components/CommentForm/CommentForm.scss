@@ -2,35 +2,26 @@
 
 .comment-form {
   display: flex;
-  margin-top: $padding-between-components-mobile;
-  padding: 0;
-  background-color: $white;
-
-  &__input {
-    width: 100%;
-    min-height: 100px;
-    padding: 10px;
-    border: 0;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-bottom: 10px;
-    resize: vertical;
-  }
+  flex-direction: column;
 
   &__header {
-    font-size: 18px;
-    margin-bottom: 10px;
+    color: $silver; 
+  }
+
+  &__input {
+    width: 70%;
+    padding: $spacing-unit; 
+    border: 1px solid $mercury; 
+    border-radius: $border-radius; 
   }
 
   &__submit {
-    background-color: $brainflix-blue;
-    color: $white;
+    padding: $spacing-unit (2 * $spacing-unit); 
     border: none;
-    border-radius: 5px;
-    padding: 10px 20px;
-    font-size: 1rem;
+    border-radius: $border-radius; 
     cursor: pointer;
-    
+    transition: background-color 0.3s ease;
+
     &:hover {
       background-color: $brainflix-darkblue;
     }
@@ -38,15 +29,5 @@
 }
 
 .user-avatar {
-  width: 4rem;
-  height: 3rem;
-  border-radius: 50%; /* Create a circular shape */
-  overflow: hidden; /* Hide any content that goes beyond the circle */
-  margin-right: $spacing-unit; /* Add some spacing between avatar and comment form */
-
-  img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Maintain aspect ratio and cover the entire circle */
-  }
+  margin: 0;
 }
