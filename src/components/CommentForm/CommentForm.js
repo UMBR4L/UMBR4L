@@ -10,7 +10,7 @@ function CommentForm({ commentCount }) {
       </h3>
       <UserAvatar className="user-avatar" />
       <form>
-        <label for="commentForm" className="comment-form__header section-header">JOIN THE CONVERSATION</label>
+        <label htmlFor="commentForm" className="comment-form__header section-header">JOIN THE CONVERSATION</label>
         <input
             name="commentForm"
           className="comment-form__input"
