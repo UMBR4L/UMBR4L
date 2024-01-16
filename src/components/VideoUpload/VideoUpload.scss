@@ -5,8 +5,8 @@
 }
 
 .header__upload-button {
-  background-color: $brainflix-blue;
-  color: $white;
+  background-color: $button-color;
+  color: $background-color;
   border-radius: $border-radius;
   cursor: pointer;
   transition: background-color 0.3s;
@@ -16,7 +16,7 @@
   background-position: (4 * $spacing-unit) center;
 
   :hover{
-    background-color: $brainflix-darkblue;
+    background-color: $button-hover-color;
   }
 }
 

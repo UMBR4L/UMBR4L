@@ -3,7 +3,7 @@ import defaultAvatar from "../../assets/images/Mohan-muruge.jpg";
 
 const UserAvatar = () => { 
     return (
-        <img className="header__avatar" src={defaultAvatar} alt={"user profile"} />
+        <img className="user-avatar" src={defaultAvatar} alt={"user profile"} />
     );
 };
 

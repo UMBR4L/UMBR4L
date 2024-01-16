@@ -38,24 +38,20 @@ h6 {
 
 // Form Field Styles
 .form-field {
-  background-color: $alabaster;
-  border: 1px solid $mercury;
+  background-color: $form-background-color;
+  border: 1px solid $line-color;
   border-radius: $border-radius;
 
   // Active State
   &:active {
-    border: 2px solid $brainflix-blue; // Border for active state
+    border: 2px solid $button-color; // Border for active state
     outline: none; // Remove default outline
   }
 
-  // Error State
-  &.error {
-    border: 1px solid #d22d2d; // Border for error state
-  }
 }
 
 // Divider Styles
 .divider {
   stroke-width: 1px;
-  color: $mercury;
+  color: $line-color;
 }

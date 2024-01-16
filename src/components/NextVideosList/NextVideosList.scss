@@ -1,39 +1,49 @@
-@import '../../styles/partials/variables.scss';
+@import "../../styles/partials/variables.scss";
 
 .video-list {
-    margin-top: 16px;
+  margin-top: $padding-between-components-mobile;
+
+  &__header {
+    font-size: $section-header-font-size;
+    line-height: $section-header-line-height;
+    color: $secondary-text-color;
+    padding-top: 0;
+    padding-bottom: 0;
   }
-  
-  .video-list-header {
-    font-size: 16px;
-    margin-bottom: 16px;
-  }
-  
-  .video-list-items {
+
+  &__items {
     list-style-type: none;
     padding: 0;
   }
-  
-  .video-list-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 16px;
-  }
-  
-  .video-thumbnail {
-    width: 160px; 
-    height: 90px; 
+}
+
+.video-item {
+  display: flex;
+  align-items: flex-end;
+
+  &__thumbnail {
+    width: 40%;
+    height: 20vw;
     object-fit: cover;
-    margin-right: 8px;
-    border-radius: 5px;
+    margin-right: $padding-between-components-mobile;
+    border-radius: $border-radius;
   }
-  
-  .video-info {
+
+  &__info {
     flex: 1;
   }
-  
 
-  
-  .video-channel {
-    font-size: 16px;
+  &__title {
+    font-size: $mobile-subheader-font-size;
+    font-weight: $font-weight-bold;
+    line-height: $mobile-subheader-line-height;
+    color: $primary-text-color;
   }
+
+  &__channel {
+    font-size: $mobile-body-copy-font-size;
+    font-weight: $font-weight-regular;
+    line-height: $mobile-body-copy-line-height;
+    color: $primary-text-color;
+  }
+}

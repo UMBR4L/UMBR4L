@@ -3,6 +3,7 @@ import "./CommentSection.scss";
 
 function Comment({ comment, index }) {
   return (
+    <>
     <li className="comment">
       <div className="comment-avatar">
         <img
@@ -20,6 +21,8 @@ function Comment({ comment, index }) {
         <p className="comment-content__text">{comment.comment}</p>
       </div>
     </li>
+      <hr />
+      </>
   );
 }
 
@@ -27,6 +30,7 @@ function CommentSection({ comments }) {
   return (
     <div className="comment-section">
       <ul className="comment-section__list">
+        <hr />
         {comments.map((comment, index) => (
           <Comment key={`comment-${index}`} comment={comment} index={index} />
         ))}

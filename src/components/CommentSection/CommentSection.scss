@@ -1,3 +1,5 @@
+@import "../../styles/partials/variables";
+
 .comment-section {
   background-color: #fff;
 
@@ -28,18 +30,20 @@
   flex: 1;
 
   &__header &__author {
+    font-size: $subheader-font-size;
+    line-height: $subheader-line-height;
     font-weight: bold;
-    margin-right: 8px;
+    margin-right: 2 * $spacing-unit;
   }
-
+  
   &__header &__timestamp {
-    color: #888;
-    font-size: 16px;
+    color: $secondary-text-color;
+    font-size: $section-header-font-size;
   }
 
   &__text {
-    font-size: 16px;
-    margin-top: 8px;
-    line-height: 1.4;
+    font-size: $body-copy-font-size;
+    line-height: $body-copy-line-height;
+    margin-top: $padding-between-components-mobile;
   }
 }

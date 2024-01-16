@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between; // This separates the two columns
     font-size: 1rem;
-    color: $mercury;
+    color: $line-color;
 
     .video-info,
     .video-stats {
@@ -20,14 +20,14 @@
     }
 
     .video-author {
-      color: $brainflix-black;
+      color: $primary-text-color;
       margin: $spacing-unit 0;
     }
 
     .video-date,
     .video-views,
     .video-likes {
-      color: $silver;
+      color: $secondary-text-color;
       font-size: $mobile-subheader-font-size;
       line-height: $mobile-subheader-line-height;
       margin: $spacing-unit 0;

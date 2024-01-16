@@ -72,23 +72,23 @@ table {
 }
 
 /* Define variables based on style guide */
-$brainflix-black: #323232;
-$brainflix-blue: #0095FF;
-$brainflix-darkblue: #0065AD;
-$silver: #AFAFAF;
-$mercury: #E1E1E1;
-$white: #FFFFFF;
-$alabaster: #FAFAFA;
+$primary-text-color: #323232;
+$button-color: #0095FF;
+$button-hover-color: #0065AD;
+$secondary-text-color: #AFAFAF;
+$line-color: #E1E1E1;
+$background-color: #FFFFFF;
+$form-background-color: #FAFAFA;
 
 /* Apply basic color settings from style guide */
 body {
-    color: $brainflix-black;
-    background-color: $white;
+    color: $primary-text-color;
+    background-color: $background-color;
 }
 
 /* Set global link color */
 a {
-    color: $brainflix-blue;
+    color: $button-color;
 }
 
 /* Apply generic padding based on style guide increments */
@@ -96,18 +96,18 @@ $padding-unit: 8px;
 
 /* Placeholder color */
 ::placeholder {
-    color: $silver;
+    color: $secondary-text-color;
 }
 
 /* Set global button styles */
 button {
-    background-color: $brainflix-blue;
-    color: $white;
+    background-color: $button-color;
+    color: $background-color;
     border: none;
     padding: $padding-unit;
     border-radius: 4px;
     cursor: pointer;
     &:hover {
-        background-color: $brainflix-darkblue;
+        background-color: $button-hover-color;
     }
 }

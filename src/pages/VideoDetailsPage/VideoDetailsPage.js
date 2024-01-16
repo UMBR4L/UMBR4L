@@ -37,6 +37,7 @@ function VideoDetailsPage() {
       .catch((error) => {
         console.error("Error fetching videos list", error);
       });
+    window.scrollTo(0, 0);
   }, [videoId]);
 
   if (!currentVideo) {

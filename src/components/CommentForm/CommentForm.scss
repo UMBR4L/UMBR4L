@@ -1,18 +1,33 @@
 @import "../../styles/partials/variables";
 
-.comment-form {
+.comment-form-section {
   display: flex;
   flex-direction: column;
+  margin-bottom: $padding-between-components-mobile;
+}
+
+.comment-form {
+  display: flex;
 
   &__header {
-    color: $silver; 
+    color: $secondary-text-color; 
+    font-size: $section-header-font-size;
+    line-height: $section-header-line-height;
+    font-weight: $font-weight-regular;
   }
 
   &__input {
-    width: 70%;
-    padding: $spacing-unit; 
-    border: 1px solid $mercury; 
+    width: 100%;
+    height: 35vw;
+    padding: 2 * $spacing-unit; 
+    border: 1px solid $line-color; 
     border-radius: $border-radius; 
+    margin-bottom: $padding-between-components-mobile;
+
+    &::placeholder {
+      color: $primary-text-color;
+      background-color: $form-background-color;
+    }
   }
 
   &__submit {
@@ -23,11 +38,11 @@
     transition: background-color 0.3s ease;
 
     &:hover {
-      background-color: $brainflix-darkblue;
+      background-color: $button-hover-color;
     }
   }
 }
 
 .user-avatar {
-  margin: 0;
+  margin-right: $padding-between-components-mobile;
 }

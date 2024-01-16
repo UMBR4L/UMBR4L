@@ -5,21 +5,38 @@ $font-family: 'Avenir Next', sans-serif;
 $font-weight-regular: 400;
 $font-weight-bold: 700;
 
-// Primary Colors
-$brainflix-black: #323232;
-$brainflix-blue: #0095FF;
-$brainflix-darkblue: #0065AD;
+// Text Colors
+$primary-text-color: #323232;
+$secondary-text-color: #AFAFAF;
 
-// Secondary Colors
-$silver: #AFAFAF;
-$mercury: #E1E1E1;
-$white: #FFFFFF;
-$alabaster: #FAFAFA;
+// Background Colors
+$background-color: #FFFFFF;
+$form-background-color: #FAFAFA;
+
+// Button Colors
+$button-color: #0095FF;
+$button-text-color: #ffffff;
+$button-hover-color: #0065AD;
+
+// Misc. Colors
+$video-player-color: #000000;
+$line-color: #E1E1E1;
 
 // Typography Sizes
 $font-size-small: 0.8rem;  
 $font-size-base: 1rem;     
 $font-size-large: 1.2rem;  
+
+// Typography Sizes for Mobile
+$mobile-header-font-size: 24px;
+$mobile-header-line-height: 32px;
+$mobile-subheader-font-size: 13px;
+$mobile-subheader-line-height: 18px;
+$mobile-body-copy-font-size: 13px;
+$mobile-body-copy-line-height: 18px;
+$mobile-label-button-font-size: 10px;
+$mobile-label-button-line-height: 20px;
+// Note: The other mobile text styles are the same as desktop/tablet
 
 // Typography Sizes for Desktop & Tablet
 $header-font-size: 33px;
@@ -32,17 +49,6 @@ $body-copy-font-size: 14px;
 $body-copy-line-height: 22px;
 $label-button-font-size: 12px;
 $label-button-line-height: 20px;
-
-// Typography Sizes for Mobile
-$mobile-header-font-size: 24px;
-$mobile-header-line-height: 32px;
-$mobile-subheader-font-size: 13px;
-$mobile-subheader-line-height: 18px;
-$mobile-body-copy-font-size: 13px;
-$mobile-body-copy-line-height: 18px;
-$mobile-label-button-font-size: 10px;
-$mobile-label-button-line-height: 20px;
-// Note: The other mobile text styles are the same as desktop/tablet
 
 // Breakpoints
 $breakpoint-mobile: 767px;

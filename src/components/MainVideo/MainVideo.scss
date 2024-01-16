@@ -1,11 +1,11 @@
-@import '../../styles/partials/variables.scss';
+@import "../../styles/partials/variables.scss";
 
 .videoPlayer {
   width: calc(100% + 2 * $padding-between-components-mobile);
   margin-left: calc(-1 * $padding-between-components-mobile);
-}
 
-.videoPlayer__video {
-  width: 100%;
-  height: auto;
+  &__video {
+    width: 100%;
+    height: auto;
+  }
 }
