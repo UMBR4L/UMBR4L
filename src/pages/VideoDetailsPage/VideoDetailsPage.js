@@ -8,17 +8,18 @@ import CommentSection from "../../components/CommentSection/CommentSection";
 import CommentForm from "../../components/CommentForm/CommentForm";
 import NextVideosList from "../../components/NextVideosList/NextVideosList";
 
-import { apiURL, apiKey } from "../../utils/api";
-
 function VideoDetailsPage() {
   const { videoId } = useParams(); // This retrieves the videoId from the URL
   const [currentVideo, setCurrentVideo] = useState(null);
   const [nextVideos, setNextVideos] = useState([]);
 
   useEffect(() => {
+    // use the apiURL and apiKey from the .env file
+    const apiURL = process.env.REACT_APP_API_URL;
+    const apiKey = process.env.REACT_APP_API_KEY;
     // Fetching the details of the current video
     axios
-      .get(`${apiURL}/videos/${videoId}?api_key=<${apiKey}>`)
+      .get(`${apiURL}/videos/${videoId}?api_key=${apiKey}`)
       .then((response) => {
         setCurrentVideo(response.data);
       })
@@ -28,7 +29,7 @@ function VideoDetailsPage() {
 
     // Fetching the list of all videos
     axios
-      .get(`${apiURL}/videos?api_key=<${apiKey}>`)
+      .get(`${apiURL}/videos?api_key=${apiKey}`)
       .then((response) => {
         // filter out the currently displayed video from the list of videos
         setNextVideos(response.data.filter((video) => video.id !== videoId));

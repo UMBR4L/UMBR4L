@@ -21,7 +21,7 @@ function VideoUploadPage() {
         `Form Fields Missing`
       )
     }
-    navigate("/"); // Redirect to the home page
+    navigate("/"); // Redi rect to the home page
   };
 
   return (

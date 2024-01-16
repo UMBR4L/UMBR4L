@@ -6,9 +6,10 @@ import Header from "./components/Header/Header";
 import VideoDetailsPage from "./pages/VideoDetailsPage/VideoDetailsPage";
 import VideoUploadPage from "./pages/VideoUploadPage/VideoUploadPage";
 
-import { apiURL, apiKey } from "./utils/api"; // api key and url for making calls
-
 import "./App.scss";
+
+const apiURL = process.env.REACT_APP_API_URL;
+const apiKey = process.env.REACT_APP_API_KEY;
 
 function App() {
   const [firstVideoId, setFirstVideoId] = useState("");
@@ -16,7 +17,7 @@ function App() {
   useEffect(() => {
     axios
       // fetch the list of videos
-      .get(`${apiURL}/videos?api_key=<${apiKey}>`)
+      .get(`${apiURL}/videos?api_key=${apiKey}`)
       // If there are videos in the list of videos,
       // get the videoID of the first video
       .then((response) => {
