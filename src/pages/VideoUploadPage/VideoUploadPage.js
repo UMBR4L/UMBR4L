@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import axios from "axios";
+import defaultUploadImage from '../../assets/images/Upload-video-preview.jpg' // Hardcoded image path
 // import './VideoUploadPage.scss';
 
 function VideoUploadPage() {
@@ -10,18 +12,35 @@ function VideoUploadPage() {
   const [description, setDescription] = useState("");
   const navigate = useNavigate();
 
+  // Event Handler for upload form
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const apiURL = process.env.REACT_APP_API_URL;
+    const apiKey = process.env.REACT_APP_API_KEY;
+
     if (title && description) {
-      alert(
-        `Video Titled: "${title}" with description: "${description}" uploaded successfully!`
-      );
+      // Construct the video object with title, description, and hardcoded image
+      const newVideo = {
+        title,
+        description,
+        image: defaultUploadImage, 
+      };
+      axios
+        .post(`${apiURL}/videos?api_key=${apiKey}`, newVideo)
+        .then((response) => {
+          alert(
+            `Video Titled: "${title}" with description: "${description}" uploaded successfully!`
+          );
+          navigate("/"); // Redirect to the home page
+        })
+        .catch((error) => {
+          console.error("Error uploading video: ", error);
+          alert("Failed to upload video.");
+        });
     } else {
-      alert(
-        `Form Fields Missing`
-      )
+      alert(`Title and description are required.`);
     }
-    navigate("/"); // Redi rect to the home page
   };
 
   return (

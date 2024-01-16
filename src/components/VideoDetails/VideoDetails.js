@@ -4,6 +4,9 @@ import viewsIcon from '../../assets/images/icons/views.svg';
 import likesIcon from '../../assets/images/icons/likes.svg'; 
 
 function VideoDetails({ title, author, likes, views, description, date }) {
+  // Convert the numeric timestamp to a Date object
+  const formattedDate = new Date(date).toLocaleString();
+
   return (
     <div className="video-details">
       <h2 className="video-title page-header">{title}</h2>
@@ -11,7 +14,7 @@ function VideoDetails({ title, author, likes, views, description, date }) {
       <div className="video-metadata">
         <div className="video-info">
           <p className="video-author subheader">By {author}</p>
-          <p className="video-date">{date}</p>
+          <p className="video-date">{formattedDate}</p>
         </div>
         <div className="video-stats">
           <p className="video-views">
